@@ -1,0 +1,660 @@
+/* CSS Reset: removes styling so that the CSS code will look the same in all browsers */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* -------------------------- Start of Custom CSS ------------------------ */
+
+.wrapper {
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+/* ----------------------------- Text styling ---------------------------- */
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+input,
+select,
+textarea {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Patua One', cursive;
+    font-weight: normal;
+
+}
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+}
+
+h4 {
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+}
+
+h5 {
+    font-size: 1em;
+    text-align: center;
+    color: black;
+}
+
+/* ------------------------------ Navigation bar ---------------------------- */
+
+div.toggle {
+    color: white;
+    font-size: 2rem;
+    
+    display: none;
+}
+
+div.global-nav {
+    z-index: 99999;
+    width: 100vw;
+    background-color: rgba(34, 34, 34, 1);
+    position: fixed;
+}
+
+div.global-nav ul#nav-bar {
+    width: inherit;
+    list-style: none;
+    
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+div.global-nav ul#nav-bar li {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+div.global-nav ul#nav-bar li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    
+}
+
+nav li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.current {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* ----------------------------- Top section (Hem) --------------------------- */
+
+#top {
+    background-color: rgb(50, 50, 50);
+}
+
+div#header-top {
+    margin: 2rem 0 2rem 0;
+}
+
+/* ----------------------------- Story section --------------------------- */
+
+#story {
+    padding-bottom: 2rem;
+}
+
+#story div#story-fit {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.par-story {
+    width: 45%;
+    max-width: 650px;
+    min-width: 300px;
+    margin: auto;
+}
+
+.par-story p {
+    margin: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+#kaijser-face {
+    width: 350px;
+    margin: auto;
+}
+
+#kaijser-face img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+/* ----------------------------- Tider section (Öppettider) --------------------------- */
+
+#tider {
+    color: #000;
+    background-color: rgba(220, 220, 220, 1);
+}
+
+#tider p {
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#tider h3 {
+    color: #000;
+}
+
+/* ----------------------------- Content section (Meny) --------------------------- */
+
+#content {
+    background-color: rgb(50, 50, 50);
+}
+
+div#header-content h2 {
+    color: white;
+}
+
+#menu-img {
+    text-align: center;
+    justify-content: center;
+}
+
+#menu-img img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 1rem 1rem 1rem 1rem;
+    width: 400px;
+    transition: all 0.5s ease-out;
+}
+
+#menu-img img:hover {
+    -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
+    filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.9));
+    transition: all 0.5s ease-out;
+    margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+
+/* ----------------------------- About section (Om Kaijsers) ----------------------------- */
+
+#about .wrapper {}
+
+.clear-fix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.crew {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 90%;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.crew-info {
+    width: 35%;
+    min-width: 250px;
+    margin: 1rem;
+    padding: 1.5rem;
+    background-color: rgba(235, 235, 235, 1);
+}
+
+.crew-info p {
+    color: rgba(150, 150, 150, 1);
+    text-align: center;
+}
+
+.crew-info img {
+    float: left;
+    border-radius: 50%;
+    width: 30%;
+}
+
+
+/* ---------------------------- Image flow ---------------------------- */
+
+#img-flow {
+    background-color: rgb(50, 50, 50);
+    padding: 2rem 0 0.5rem 0;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+/* ------- Bx-silder -------- */
+
+.slide-wrapper {
+    /* padding: 0 0.5rem 0 0.5rem; */
+}
+
+div.bx-pager.bx-default-pager {
+    /* display: none; */
+}
+
+/* Ändrar styling på wrappern runt bxslidern */
+div.bx-wrapper {
+    border: 5px solid rgba(68, 68, 68, 1);
+    background: rgba(68, 68, 68, 1);
+    box-shadow: 1px 1px 1px #000;
+    z-index: 10;
+}
+
+/* Style för flora i bakgrunden, absolute relativt till img-flow */
+#detail1 img,
+#detail2 img {
+    position: absolute;
+    z-index: 1;
+    
+    opacity: 0.2;
+    filter:grayscale(100%);
+}
+#detail1 img {
+    width: 350px;
+    left: 50px;
+    bottom: -100px;
+}
+#detail2 img {
+    width: 400px;
+    right: 40px;
+    bottom: -100px;
+}
+
+/* ------------------------- Contact-us section ----------------------- */
+
+/* Contact-form styling */
+
+#contact-us {
+    background-color: rgba(220, 220, 220, 1);
+}
+
+.contact-form {
+    width: 40%;
+    margin: auto;
+}
+/* Tar bort stylingen på select som webbläsare lägger på*/
+.contact-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* sätter p#reason-p till relative för att sedan göra :after till absolut, relativt till reason-p*/
+#contact.contact-form p#reason-p {
+    position: relative;
+}
+/* Ville inte ha olika stil beroende på webbläsare så använder mig av fontAwesome */
+#contact.contact-form p#reason-p:after {
+    content: '\f078';
+    font: 12px 'FontAwesome';
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    
+    width: 100%;
+    text-align: right;
+    
+    position: absolute;
+    display: block;
+    
+    top: 25.5px;
+}
+
+.contact-form input[type=text],
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+/* gör texten till select "color: black" när man Klickar på den och klassen focusText läggs på */
+#contact-us .contact-form p select.focusText {
+    color: black;
+}
+
+/* select var lite mindre än ett vanligt textfält, +18px därför.*/
+.contact-form p select#reason {
+    width: calc(100% + 18px);
+    height: 2rem;
+    padding: 2px;
+    color: grey;
+}
+
+.contact-form textarea {
+    resize: none;
+    font-size: small;
+}
+
+#form-button {
+    text-align: center;
+    justify-content: center;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+    width: 160px;
+    padding: 4px;
+    margin: 1rem .5rem .5rem .5rem;
+    transition: all 0.3s;
+    border-radius: 4px;
+    background: rgba(180, 180, 180, 1);
+    border: none;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+    background: #fff;
+}
+
+.contact-form input[type=text],
+.contact-form textarea,
+.contact-form p select#reason {
+    margin: 1rem 0 0 -0.5rem;
+    border: solid 1px rgba(255, 255, 255, 1);
+    border-radius: 0%;
+    transition: all 0.5s ease-out;
+}
+
+.contact-form input[type=text]:focus,
+.contact-form textarea:focus,
+.contact-form p select#reason:focus {
+    border: solid 1px rgba(20, 150, 20, 1);
+    transition: all 0.5s ease-out;
+}
+#message-error,
+#email-error,
+#name-error {
+    color: red;
+    font-size: small;
+}
+
+#contact-info {
+    width: 100%;
+    padding: 1rem 0 0 0;
+    text-align: center;
+}
+
+/* ----------------------------- Footer section ---------------------------- */
+
+#footer {
+    background-color: #222;
+    min-height: 10vh;
+}
+
+#footer-fit {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#footer-fit img {
+    max-width: 200px;
+    margin: auto;
+}
+
+ul#other-info {
+    width: 200px;
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+
+}
+
+ul#other-info li {
+    display: inline;
+    margin: 0.5rem;
+}
+
+ul#other-info li a {
+    color: rgba(100, 100, 100, 1);
+}
+
+ul#other-info li a:hover {
+    color: rgba(200, 200, 200, 1);
+}
+
+ul#adress-info {
+    width: 200px;
+    margin: auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul#adress-info li p {
+    color: rgb(200, 200, 200);
+    text-align: center;
+}
+
+#back-top {
+    width: 100%;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+#back-top a {
+    color: black;
+}
+
+#back-top a:hover {
+    color: grey;
+}
+
+#result {
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid grey;
+}
+
+/* Media query - mobile optimize */
+
+@media screen and (max-width: 570px) {
+    h1 {
+        font-size: 3rem;
+        padding-top: 2.5rem;
+        margin: auto;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .wrapper {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    /* nav menu */
+    div.toggle {
+        display: block;
+        padding: 0px 10px 0px 10px;
+    }
+    div.global-nav {
+        position: fixed;
+    }
+
+    div.global-nav ul#nav-bar {
+        display: list-item;
+        flex-flow: row wrap;
+        
+        height: 0px;
+        overflow: hidden;
+        transition: height 200ms ease-in-out;
+        
+    }
+    div.global-nav ul#nav-bar.menu-toggle {
+        height: 296px;
+    }
+
+    div.global-nav ul#nav-bar li {
+        padding: 0.5rem 1rem 0.5rem 1rem;
+    }
+
+    div.global-nav ul#nav-bar li a {}
+    
+    /* story */
+    
+    .par-story {
+        max-width: 80%;
+        margin: auto;
+    }
+    /* img-flow */
+    #detail1 img,
+    #detail2 img {
+        display: none;
+    }
+    
+    /* footer */
+
+    #footer .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    ul#adress-info {
+        margin: 1rem;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
+
+    #menu-img img {
+        width: 80%;
+    }
+    
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang=sv>
+
+<head>
+    <!-- Sätter vilken encoding som ska vara på sidans textelement. -->
+    <meta charset="utf-8">
+    <!-- Sätter titeln på hemsidan, det visas t.ex. i fliken! -->
+    <title>Kaijsers re-design</title>
+    <!-- Definierar webbläsarens width, alltså bredd. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- länkar lokalt till den css-fil som ska användas för att stilsätta sidan. -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Google fonts är bra grejer, massa bra fonts att använda sig av! -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Patua+One|Roboto+Slab:300,400,700">
+    <!-- Länkar till font-awesomes sida och använder sig av en av deras css-fil. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Animate.css - https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- bxSlider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.13/dist/jquery.bxslider.min.css">
+
+    <style>
+        /* Lägger på lite style på wrappern till bx-slider */
+        .slide-wrapper {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Mitt globala navigations-fält -->
+    <div class="global-nav">
+        <nav id="nav">
+            <div class="toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <ul id="nav-bar">
+                <li class="current"><a href="#top">Hem</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#tider">Öppettider</a></li>
+                <li><a href="#content">Meny</a></li>
+                <li><a href="#about">Om oss</a></li>
+                <li><a href="#contact-us">Kontakta oss</a></li>
+                <li><a href="#footer">Bottom</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Top / Hem -->
+    <section id="top">
+        <div class="wrapper">
+            <div id="header-top">
+                <h1>Kaijsers Köksmingel</h1>
+                <h3>Välkommen till Apotekare Kaijsers Köksmingel i Karlstad!</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Story -->
+    <section id="story">
+        <div class="wrapper">
+            <div id="header-story">
+                <h2>Story</h2>
+            </div>
+            <div id="story-fit">
+                <div class="par-story">
+
+                    <h4>Lorentz Kaijser</h4>
+
+                    <p>En solig sommardag den 1 juli 1865 tog apotekare Lorentz Kaijser över Karlstads apotek på Kungsgatan. Dagen efter bryter branden lös som ödelägger nästan hela staden. Trots den förfärliga starten byggde han snabbt upp sitt apotek igen och drev under sin livstid mängder av företag. Med ett finger i de flesta spel blev han en känd profil i staden. Den 24 mars 2016 återuppstår han igen, med sitt namn på ännu en verksamhet.</p>
+
+                    <h4>Kolgrill och köksmingel</h4>
+
+                    <p>Restaurangens mat består av en kolgrillsmeny. Köket är beläget mitt i restaurangen och ska ge en nära känsla till mathantverket. Tänket bakom restaurangens planlösning och namn är hämtat från hemmafester – det är alltid roligast mingel i köket. Rätterna är uppkallade efter Apotekare Kaijser, händelser ur hans liv och hans släkt.</p>
+                </div>
+                <div id="kaijser-face">
+                    <img src="img/kaijser-face-no-space.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Öppettider -->
+    <section id="tider">
+        <div class="wrapper">
+            <div id="header-tider">
+                <h2>Öppettider</h2>
+            </div>
+            <div>
+                <p>MÅNDAG-TORSDAG 11.30 – 23.00 | FREDAG: 11.30 – 01.00 | LÖRDAG: 16.00 – 01.00 | SÖNDAG: Stängt</p>
+                <h3>Lunch</h3>
+                <p>MÅNDAG – FREDAG 11.30 – 14.00</p>
+            </div>
+        </div>
+    </section>
+    <!-- Meny -->
+    <section id="content">
+        <div class="wrapper">
+            <div id="header-content">
+                <h2>Meny</h2>
+            </div>
+            <div id="menu-img">
+                <a href="img/meny/kaijser_meny2017_host_a4_Page_2.png"><img src="http://toto.mkv.kau.se/ht17/wp_12/individuell/img/meny/kaijser_meny2017_host_a4_Page_2.png" alt="menu2"></a>
+                <a href="img/meny/kaijser_meny2017_host_a4_Page_3.png"><img 
+                src="http://toto.mkv.kau.se/ht17/wp_12/individuell/img/meny/kaijser_meny2017_host_a4_Page_3.png" alt="menu3"></a>
+                <a href="img/meny/kaijser_meny2017_host_a4_Page_4.png"><img src="http://toto.mkv.kau.se/ht17/wp_12/individuell/img/meny/kaijser_meny2017_host_a4_Page_4.png" alt="menu4"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Om Kaijsers -->
+    <section id="about">
+        <div class="wrapper">
+            <div id="header-about">
+                <h2>Om oss</h2>
+            </div>
+            <div class="crew">
+                <div class="crew-info clear-fix">
+                    <img src="img/crew/claesnordsater_kaijsers_kontakt.jpg" alt="">
+                    <h4>Claes Nordsäter</h4>
+                    <h5>Driftchef</h5>
+                    <p>claes@kaijsers.se
+                        <p>
+                </div>
+                <div class="crew-info clear-fix">
+                    <img src="img/crew/jockestaf_kaijsers_kontakt.jpg" alt="">
+                    <h4>Johakim Staf</h4>
+                    <h5>Köksmästare</h5>
+                    <p>koket@kaijsers.se
+                        <p>
+                </div>
+                <div class="crew-info clear-fix">
+                    <img src="img/crew/seth-doyle-197579.jpg" alt="">
+                    <h4>Hans Hansson</h4>
+                    <h5>Kock</h5>
+                </div>
+                <div class="crew-info clear-fix">
+                    <img src="img/crew/joe-gardner-149699.jpg" alt="">
+                    <h4>Ann Andersson</h4>
+                    <h5>Bartender</h5>
+                </div>
+                <div class="crew-info clear-fix">
+                    <img src="img/crew/erica-magugliani-423914.jpg" alt="">
+                    <h4>Johanna Lägereld</h4>
+                    <h5>Bartender</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="img-flow">
+        <!-- ---------------------- BX ------------------------ -->
+        <div class="slide-wrapper">
+            <ul class="slider">
+                <li><img src="img/bx-slider/sebastian-lp-204232.jpg" alt="vältillagat kött" title="bild 1 av 5"></li>
+                <li><img src="img/bx-slider/scott-webb-154507.jpg" alt="slider2" title="bild 2 av 5"></li>
+                <li><img src="img/bx-slider/nick-karvounis-104500.jpg" alt="slider3" title="bild 3 av 5"></li>
+                <li><img src="img/bx-slider/kaijser-slide-retro-bottle.jpg" alt="slider4" title="bild 4 av 5"></li>
+                <li><img src="img/bx-slider/kaijser-slide-lamp.jpg" alt="slider5" title="bild 5 av 5"></li>
+            </ul>
+        </div>
+        <!-- ---------------------- BX ------------------------ -->
+        <div id="detail1">
+            <img src="img/branch-2022628.png" alt="">
+        </div>
+        <div id="detail2">
+            <img src="img/branch-2023190.png" alt="">
+        </div>
+    </section>
+    <!-- Kontakta oss -->
+    <section id="contact-us">
+        <div class="wrapper">
+            <div id="header-contact">
+                <h2>Kontakta oss</h2>
+            </div>
+            <!-- Mitt form -->
+            <form id="contact" class="contact-form" action="contact.php" method="post">
+                <p><input type="text" id="name" name="name" placeholder="Namn:"></p>
+                <p><input type="text" id="email" name="email" placeholder="E-mail:"></p>
+                <p id="reason-p">
+                    <select name="reason" id="reason">
+                      <option value="inget ämne">Ämne:</option>
+                      <option value="meny">Fråga angående meny</option>
+                      <option value="beställ bord">Beställ ett bord</option>
+                      <option value="kommentar">Lämna en kommentar om hemsidan</option> 
+                    </select>
+                </p>
+                <p><textarea id="message" name="message" placeholder="Skriv meddelande här." required></textarea></p>
+
+                <div id="form-button">
+                    <p><input type="reset"><input type="submit" value="Submit"></p>
+                </div>
+                
+            </form>
+            <div id="result"></div>
+            <div id="contact-info">
+                <p>Vill du komma i kontakt med restaurangen eller någon av våra ansvariga kan du också ringa 054 – 22 22 14.</p>
+            </div>
+            <div id="back-top">
+                <a href="#top"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="wrapper">
+            <div id=footer-fit>
+                <ul id="adress-info">
+                    <li><p>Kaijsers</p></li>
+                    <li><p>Kungsgatan 14</p></li>
+                    <li><p>652 24 Karlstad</p></li>
+                    <li><p>054 - 22 22 14</p></li>
+                </ul>
+
+                <img src="img/kaijser-logotyp.png" alt="logo" id="comp-logo">
+
+                <ul id="other-info">
+                    <li><a href="https://www.facebook.com/kaijsers/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="https://goo.gl/maps/ViwtJ9oAT9A2"><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/kaijsers/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Placerar scriptet sist så att content laddar först och motverkar att sidan laddar segt. -->
+    <!-- jQuery Minified -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- jQuery Validate Minified -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <!-- One Page Nav Minified -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <!-- Bx-slider Minified -->
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.13/dist/jquery.bxslider.min.js"></script>
+
+    <script>
+        // bx-sliderns script här, lite extra inställningar som en "fade" övergång, att det sker automatiskt m.m.
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                mode: 'fade',
+                captions: false,
+                auto: true,
+                shrinkItems: false,
+            });
+
+            $('#nav').onePageNav();
+
+            // Körs när man klickar på reset
+            $('input[type=reset]').on('click', function() {
+                // En css animation på mitt form som aktiveras av jquery-script och sedan tas bort när den är klar. 
+                $('input[type=text]').addClass('animated flash').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                    $(this).removeClass('animated flash');
+                });
+                // En css animation på mitt form som aktiveras av jquery-script och sedan tas bort när den är klar.
+                $('#message').addClass('animated flash').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                    $(this).removeClass('animated flash');
+                });
+                // En css animation på mitt form som aktiveras av jquery-script och sedan tas bort när den är klar.
+                $('#reason').addClass('animated flash').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+                    $(this).removeClass('animated flash');
+                });
+                // Tar bort felmeddelanden som skrivs ut av jquery validator
+                var validator = $("#contact").validate();
+                validator.resetForm();
+                // Tar bort focusText från #reason så att texten blir grå igen.
+                $('#reason').removeClass('focusText');
+                // Tömmer #result (svaret som skrivs ut från ajax-scriptet)
+                $('#result').html('');
+            });
+            
+            // Lägger till en klass till #reason när man klickar.
+            $('#reason').on('focus', function() {
+                $(this).addClass('focusText');
+            });
+            // En Toggle för hamburgarmenyn
+            $(".toggle").click(function() {
+                $("#nav-bar").toggleClass("menu-toggle");
+            });
+            // Ajax ligger innanför validate så att inte informationen skickas utan att den är komplett.
+            $("#contact").validate({
+                // Sätter krav för vad som ska fyllas i
+                rules: {
+                    name: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                // Sätter meddelanden om kraven inte uppfylls
+                messages: {
+                    name: "Skriv namn här, tack.",
+                    email: {
+                        required: "Vi behöver din e-mail för att återkomma till dig.",
+                        email: "Du måste skriva in en fullständig email ex: name@domain.com"
+                    }
+                },
+                submitHandler: function(form) {
+                    values = $(form).serialize();
+
+                    $.ajax({
+                        url: form.action,
+                        type: form.method,
+                        data: values,
+                        dataType: "json",
+                        success: function(response) {
+                            // Får tillbaka svar från php (response), skriver sedan ut ett meddelande baserat på svaret.
+                            $("#result").html(
+                                "<p>Hej, " + response.data.name + "!</p>" +
+                                "<p>Du har valt ämnet '" + response.data.reason + "'</p>" +
+                                "<p>Vi återkommer till dig på din mailadress: " + response.data.email + "</p>"
+                            );
+                        },
+                        // Om svaret inte kan skrivas ut så skrivs det här ut istället.
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            console.log(textStatus, errorThrown);
+                            $("#result").html("<p>There was an error</p>");
+                        }
+                    });
+                },
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>
